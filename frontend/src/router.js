@@ -5,14 +5,14 @@ import Router from 'vue-router'
 Vue.use(Router);
 
 
-import OrderManager from "./components/listers/OrderCards"
-import OrderDetail from "./components/listers/OrderDetail"
+import OrderOrderManager from "./components/listers/OrderOrderCards"
+import OrderOrderDetail from "./components/listers/OrderOrderDetail"
 
-import InventoryManager from "./components/listers/InventoryCards"
-import InventoryDetail from "./components/listers/InventoryDetail"
+import InventoryInventoryManager from "./components/listers/InventoryInventoryCards"
+import InventoryInventoryDetail from "./components/listers/InventoryInventoryDetail"
 
-import DeliveryManager from "./components/listers/DeliveryCards"
-import DeliveryDetail from "./components/listers/DeliveryDetail"
+import DeliveryDeliveryManager from "./components/listers/DeliveryDeliveryCards"
+import DeliveryDeliveryDetail from "./components/listers/DeliveryDeliveryDetail"
 
 
 export default new Router({
@@ -20,36 +20,36 @@ export default new Router({
     base: process.env.BASE_URL,
     routes: [
             {
-                path: '/orders',
-                name: 'OrderManager',
-                component: OrderManager
+                path: '/orders/orders',
+                name: 'OrderOrderManager',
+                component: OrderOrderManager
             },
             {
-                path: '/orders/:id',
-                name: 'OrderDetail',
-                component: OrderDetail
-            },
-
-            {
-                path: '/inventories',
-                name: 'InventoryManager',
-                component: InventoryManager
-            },
-            {
-                path: '/inventories/:id',
-                name: 'InventoryDetail',
-                component: InventoryDetail
+                path: '/orders/orders/:id',
+                name: 'OrderOrderDetail',
+                component: OrderOrderDetail
             },
 
             {
-                path: '/deliveries',
-                name: 'DeliveryManager',
-                component: DeliveryManager
+                path: '/inventories/inventories',
+                name: 'InventoryInventoryManager',
+                component: InventoryInventoryManager
             },
             {
-                path: '/deliveries/:id',
-                name: 'DeliveryDetail',
-                component: DeliveryDetail
+                path: '/inventories/inventories/:id',
+                name: 'InventoryInventoryDetail',
+                component: InventoryInventoryDetail
+            },
+
+            {
+                path: '/deliveries/deliveries',
+                name: 'DeliveryDeliveryManager',
+                component: DeliveryDeliveryManager
+            },
+            {
+                path: '/deliveries/deliveries/:id',
+                name: 'DeliveryDeliveryDetail',
+                component: DeliveryDeliveryDetail
             },
 
 

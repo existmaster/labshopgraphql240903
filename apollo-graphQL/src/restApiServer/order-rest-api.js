@@ -1,12 +1,12 @@
-import {RESTDataSource} from 'apollo-datasource-rest';
+import {RESTDataSource} from 'apollo-datasource-rest';
 
 class orderRestApi extends RESTDataSource {
     constructor() {
         super();
         // dev for Local
-            this.baseURL = 'http://localhost:8081';
+            this.baseURL = 'http://localhost:8082';
         // dev for IDE
-            // this.baseURL = 'http://8081-ide-xxxxxxxxxx.kuberez.io'
+            // this.baseURL = 'http://8082-ide-xxxxxxxxxx.kuberez.io'
         // prod
             // this.baseURL = 'https://order:8080';
     }
@@ -34,6 +34,7 @@ class orderRestApi extends RESTDataSource {
 }
 
 export default orderRestApi;
+
 
 
 

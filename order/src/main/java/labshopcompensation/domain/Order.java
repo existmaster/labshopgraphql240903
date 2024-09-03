@@ -4,7 +4,6 @@ import java.util.Date;
 import java.util.List;
 import javax.persistence.*;
 import labshopcompensation.OrderApplication;
-import labshopcompensation.domain.OrderCancelled;
 import labshopcompensation.domain.OrderPlaced;
 import lombok.Data;
 
@@ -38,9 +37,12 @@ public class Order {
     @PrePersist
     public void onPrePersist() {
         // Get request from Inventory
-        //labshopcompensation.external.Inventory inventory =
-        //    Application.applicationContext.getBean(labshopcompensation.external.InventoryService.class)
-        //    .getInventory(/** mapping value needed */);
+        labshopcompensation.external.Inventory inventory =
+           OrderApplication.applicationContext.getBean(labshopcompensation.external.InventoryService.class)
+           .getInventory(Long.valueOf(getProductId()));
+
+        if(inventory.getStock() < getQty())
+            throw new RuntimeException("Out of stock!");
 
     }
 

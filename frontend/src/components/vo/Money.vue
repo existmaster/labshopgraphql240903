@@ -13,7 +13,7 @@
             <div v-else>
                 <v-card
                     class="mx-auto"
-                    color="orange"
+                    color="surface"
                     dark
                     min-width="200"
                     max-width="400"

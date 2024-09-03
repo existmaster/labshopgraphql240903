@@ -1,4 +1,4 @@
-import {gql} from 'apollo-server';
+import {gql} from 'apollo-server';
 
 const typeDefs = gql`
     scalar Date
@@ -38,4 +38,5 @@ const typeDefs = gql`
 `;
 
 export default typeDefs;
+
 

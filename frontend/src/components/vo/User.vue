@@ -12,7 +12,7 @@
                 <v-btn
                 v-if="avatarMode"
                 icon
-                color="grey"
+                color="primary"
                 @click="changeUserCard()"
                 >
                     <v-icon>mdi-credit-card</v-icon>
@@ -20,7 +20,7 @@
                 <v-btn
                 v-if="!avatarMode"
                 icon
-                color="grey"
+                color="primary"
                 @click="changeUserCard()"
                 >
                     <v-icon>mdi-account-box</v-icon>
@@ -30,22 +30,22 @@
 
         <v-card-text v-if="value">
             <div v-if="editMode" style="margin-top:-20px;">
-                <v-text-field label="Id" v-model="value.userId"/>
+                <v-text-field label="아이디" v-model="value.userId"/>
             </div>
             <div v-if="editMode" style="margin-top:-20px;">
-                <v-text-field label="Password" v-model="value.password"/>
+                <v-text-field label="비밀번호" v-model="value.password"/>
             </div>
             <div v-if="editMode" style="margin-top:-20px;">
-                <v-text-field label="Name" v-model="value.name"/>
+                <v-text-field label="이름" v-model="value.name"/>
             </div>
             <div v-if="editMode" style="margin-top:-20px;">
-                <v-text-field label="Email" v-model="value.email"/>
+                <v-text-field label="이메일" v-model="value.email"/>
             </div>
             <div v-if="editMode" style="margin-top:-20px;">
-                <v-text-field label="Address" v-model="value.address"/>
+                <v-text-field label="주소" v-model="value.address"/>
             </div>
             <div v-if="editMode" style="margin-top:-20px;">
-                <v-text-field label="Phone" v-model="value.phone"/>
+                <v-text-field label="휴대폰" v-model="value.phone"/>
             </div>
             <div v-if="!editMode">
                 <v-card

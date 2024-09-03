@@ -1,4 +1,4 @@
-const resolvers = {
+const resolvers = {
     Order: {
         // set Query
     }
@@ -32,3 +32,4 @@ const resolvers = {
 };
 
 export default resolvers;
+

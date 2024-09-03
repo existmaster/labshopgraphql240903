@@ -43,10 +43,10 @@
                     </div>
 
                     <div v-if="!editMode" style="font-size:25px; font-weight:500; margin-left:20px; color:white;">
-                            온도 {{value.degree }}&nbsp;<v-icon x-large color="white">mdi-temperature-celsius</v-icon>&nbsp;&nbsp;
-                            풍속 {{value.wind }}km/h&nbsp;<v-icon x-large color="white">mdi-weather-windy-variant</v-icon><br>
-                            강수확률 {{value.precipitation }}%&nbsp;<v-icon x-large color="white">mdi-umbrella</v-icon>&nbsp;&nbsp;
-                            습도 {{value.humidity }}%&nbsp;<v-icon x-large color="white">mdi-weather-rainy</v-icon>
+                            온도 {{value.degree }}&nbsp;<v-icon x-large color="secondary">mdi-temperature-celsius</v-icon>&nbsp;&nbsp;
+                            풍속 {{value.wind }}km/h&nbsp;<v-icon x-large color="secondary">mdi-weather-windy-variant</v-icon><br>
+                            강수확률 {{value.precipitation }}%&nbsp;<v-icon x-large color="secondary">mdi-umbrella</v-icon>&nbsp;&nbsp;
+                            습도 {{value.humidity }}%&nbsp;<v-icon x-large color="secondary">mdi-weather-rainy</v-icon>
                     </div>
                 </v-img>
             </v-card>
